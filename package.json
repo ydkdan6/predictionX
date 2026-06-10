@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "bot:start": "pnpm tsx lib/whatsapp/bot.ts",
+    "bot:start": "pnpm tsx scripts/manage-bot.ts start",
     "bot:manage": "pnpm tsx scripts/manage-bot.ts",
     "fixtures:sync": "pnpm tsx scripts/manage-bot.ts sync-fixtures",
     "fixtures:list": "pnpm tsx scripts/manage-bot.ts list-fixtures",
