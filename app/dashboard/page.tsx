@@ -74,7 +74,7 @@ export default function DashboardPage() {
       <div className="bg-secondary/10 border border-secondary/30 p-5 rounded-2xl relative overflow-hidden mt-auto mb-20">
         <div className="relative z-10">
           <h3 className="font-black text-lg text-secondary mb-1">👑 Premium Status</h3>
-          <p className="text-sm text-foreground/80 mb-4">You are eligible for all cash prizes and global jackpot.</p>
+          <p className="text-sm text-foreground/80 mb-4">You are eligible for all sponsor rewards and weekly prizes.</p>
         </div>
         <Trophy className="absolute -right-4 -bottom-4 w-24 h-24 text-secondary/10" />
       </div>

@@ -1,4 +1,8 @@
+'use client'
+
+import { useState } from 'react'
 import { Clock, Trophy } from "lucide-react"
+import { PredictionModal } from './PredictionModal'
 
 export interface MatchProps {
   id: string
@@ -13,6 +17,7 @@ export interface MatchProps {
 }
 
 export function MatchCard({ match }: { match: MatchProps }) {
+  const [isModalOpen, setIsModalOpen] = useState(false)
   const isLive = match.status === "live"
 
   return (
@@ -69,12 +74,21 @@ export function MatchCard({ match }: { match: MatchProps }) {
 
       {match.status === "upcoming" && (
         <div className="mt-5 pt-4 border-t border-border flex justify-center">
-          <button className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-2.5 px-6 rounded-full text-sm transition-transform active:scale-95 shadow-[0_4px_14px_0_rgba(0,213,99,0.39)] w-full flex items-center justify-center">
+          <button 
+            onClick={() => setIsModalOpen(true)}
+            className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-2.5 px-6 rounded-full text-sm transition-transform active:scale-95 shadow-[0_4px_14px_0_rgba(0,213,99,0.39)] w-full flex items-center justify-center"
+          >
             <Trophy className="w-4 h-4 mr-2" />
             Predict Now
           </button>
         </div>
       )}
+
+      <PredictionModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+        match={match} 
+      />
     </div>
   )
 }

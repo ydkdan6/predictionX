@@ -16,7 +16,7 @@ export default function LeaderboardPage() {
     <div className="flex flex-col min-h-screen px-4 py-6">
       <header className="mb-6 text-center">
         <h1 className="text-3xl font-black uppercase tracking-tight">Global Rank</h1>
-        <p className="text-muted-foreground text-sm mt-1">Top players win cash prizes</p>
+        <p className="text-muted-foreground text-sm mt-1">Top players win sponsor rewards</p>
       </header>
 
       <div className="bg-card border border-border p-4 rounded-2xl mb-6 shadow-sm flex justify-around items-center">

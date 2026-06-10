@@ -54,7 +54,7 @@ export default function LandingPage() {
                 <span className="text-secondary">👑</span>
                 Go Premium
               </div>
-              <span className="text-xs text-muted-foreground font-medium group-hover:text-foreground transition-colors">Win Cash Prizes</span>
+              <span className="text-xs text-muted-foreground font-medium group-hover:text-foreground transition-colors">Win Sponsor Rewards</span>
             </Link>
           </div>
         </div>

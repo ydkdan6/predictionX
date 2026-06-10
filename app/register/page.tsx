@@ -32,7 +32,7 @@ export default function RegisterPage() {
             👑 Premium Access
           </div>
           <h1 className="text-3xl font-black mb-2">Create Account</h1>
-          <p className="text-muted-foreground text-sm">Join the premium tier to compete for cash prizes and get on the global leaderboard.</p>
+          <p className="text-muted-foreground text-sm">Join the premium tier to compete for sponsor-funded prizes like iPhones, TVs, and jerseys.</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -71,7 +71,7 @@ export default function RegisterPage() {
             disabled={loading}
             className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold py-4 rounded-xl mt-6 transition-transform active:scale-95 flex items-center justify-center gap-2 shadow-[0_4px_14px_0_rgba(255,215,0,0.2)] disabled:opacity-50 disabled:active:scale-100"
           >
-            {loading ? "Creating Account..." : "Pay & Register (₦500)"}
+            {loading ? "Joining..." : "Join Premium Community (₦2,000)"}
             {!loading && <ArrowRight className="w-5 h-5" />}
           </button>
         </form>
