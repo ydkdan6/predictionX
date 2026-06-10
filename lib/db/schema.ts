@@ -90,6 +90,9 @@ export const predictions = pgTable('predictions', {
   apiFixtureId: integer('api_fixture_id').notNull(),
   predictedHomeScore: integer('predicted_home_score').notNull(),
   predictedAwayScore: integer('predicted_away_score').notNull(),
+  predictedFirstGoalScorer: text('predicted_first_goal_scorer'),
+  predictedPossessionRange: text('predicted_possession_range'),
+  predictedTotalGoals: text('predicted_total_goals'),
   createdAt: timestamp('created_at').notNull().defaultNow(),
 })
 
