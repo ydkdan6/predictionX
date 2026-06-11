@@ -84,7 +84,7 @@ export async function initializeWhatsAppBot() {
       await handleMessage(from, text, timestamp || 0, sock)
     } catch (error) {
       console.error('[v0] Error processing message:', error)
-      await sock.sendMessage(from, { text: 'An error occurred. Please try again.' })
+      // await sock.sendMessage(from, { text: 'An error occurred. Please try again.' })
     }
   })
 
